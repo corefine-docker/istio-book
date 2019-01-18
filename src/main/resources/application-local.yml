@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+feign:
+  chapter: http://127.0.0.1:8081
+  content: http://127.0.0.1:8082
+
+book.version: 1.0
