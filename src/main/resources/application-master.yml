@@ -2,7 +2,7 @@ server:
   port: 8080
 
 feign:
-  chapter: http://127.0.0.1:8081
-  content: http://127.0.0.1:8082
+  chapter: http://chapter:8080
+  content: http://content:8080
 
-book.version: 1.0
+book.version: 1.0.0
