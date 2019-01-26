@@ -1,8 +1,20 @@
+server:
+  port: 8080
+
 spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-logging:
-  level:
-    root: info
-    org.corefine.common: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+info:
+  name: book
+  version: 1.1.0
+
+book:
+  version: ${info.version}
